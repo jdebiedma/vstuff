@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+ <meta charset="UTF-8">
+
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Amanda's Page!</title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+
+
+
+</head>
+<body>
+
+<div class="jumbotron">
+  <div class = "row">
+  <h1 style="text-align: center;">Hi Panda!</h1> 
+  <p></p>
+ </div>
+</div>
+
+<div class="container">
+<div class="row">
+  <div class="span4"></div>
+  <div class="span4"><img style ="width: 30%" class="center-block" src="http://content.mycutegraphics.com/graphics/hearts/pink-heart.png" /></div>
+  <div class="span4"></div>
+</div>
+
+
+
+<h2 style="text-align: center"> I made a little website for you that you can always come back to if you're ever feeling down.
+
+<br>
+<br>
+
+It's not much, but it should the job done!
+
+<br>
+<br>
+
+I'll be adding more to it soon.
+
+
+
+
+
+
+
+
+
+
+</h2>
+
+<h3 style="margin-left: 20px; margin-right: 20px;"> 
+
+<br>
+
+Press any of the following keys (without caps lock):
+
+<br>
+<br>
+
+A = Anniversary (tells you how long we've been together in days)
+
+<br>
+<br>
+
+B = Background Music
+
+
+<br>
+<br>
+
+C = Cuddle-Meter: Juan now owes you <span id="cuddle-text"><strong>2</strong></span> hours of cuddling.
+
+
+<br>
+<br>
+
+D = Does Juan love Amanda a lot?
+
+<br>
+<br>
+
+E = Every time you look at me this happens. 
+
+<br>
+<br>
+
+F= Facebook Memories of Us!
+
+
+ </h3>
+
+
+
+ <!-- jQuery CDN -->
+ 
+
+
+  <script type="text/javascript">
+    
+  var cuddleText = document.getElementById("cuddle-text") ;
+  
+  
+
+  var cuddles = 2;
+
+
+
+
+function time() {
+
+    var prevTime = new Date(2013,3,31,0,0);  // Feb 1, 2011
+var thisTime = new Date();              // now
+var diff = thisTime.getTime() - prevTime.getTime();   // now - Feb 1
+var diff2 = Math.floor(diff / (1000*60*60*24));
+
+alert("We've spent " +  diff2 + " amazing days together!");
+
+winsText.textContent = diff2;
+
+}
+
+document.body.onkeyup = function(e){
+    if(e.keyCode == 65) { 
+     
+      alert("Hi!");
+      
+      time();
+
+
+
+      }
+
+     else if(e.keyCode == 66) { 
+
+          window.open("https://www.youtube.com/watch?v=_R3B2Xr8kwQ");
+
+
+
+
+    }
+
+    else if(e.keyCode == 67) { 
+
+          
+
+          cuddles++;
+          cuddleText.textContent = cuddles;
+
+
+    }
+
+    else if(e.keyCode == 68) { 
+
+          
+
+          alert("Does Juan love Amanda a lot? Yes, he does. Actually, he loves her a LOBSTER.")
+          window.open("https://www.youtube.com/watch?v=TyvRjF0NBeM");
+
+    }
+
+
+    else if(e.keyCode == 69) { 
+
+      alert('Juan thinks in his head, "man am I a lucky dude."')
+
+}
+
+else if(e.keyCode == 70) { 
+
+          window.open("https://www.facebook.com/search/val:chrono/name:sort/681999531/photos-of/537802134/photos-of/intersect-2/photos-ranking");
+
+
+
+
+    }
+
+
+  }
+
+
+
+
+
+
+
+  </script>
+
+</body>
+</html>
